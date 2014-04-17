@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/cork_green"
+    tools:context=".MatchupMainActivity" >
+    
+    <RelativeLayout android:id="@+id/matchup_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/select_matchup_start_btn"
+	            android:textColor="#FFFFFF"
+            android:onClick="startGame" />
+
+        <TextView
+            android:id="@+id/matchup_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/matchup_prompt_string"
+	        android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout android:id="@+id/matchup_lists"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:baselineAligned="false" >
+        
+        <ListView android:id="@+id/player_list_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:paddingRight="25dp" >
+        
+    	</ListView>
+    	
+        <ListView android:id="@+id/player_list_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:paddingLeft="25dp" >
+        
+    	</ListView>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout android:id="@+id/new_matchup_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/new_matchup_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createMatchup"
+	        android:textColor="#FFFFFF"
+            android:text="@string/new_player" />
+        
+    </LinearLayout>
+
+</LinearLayout>

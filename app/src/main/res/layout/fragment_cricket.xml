@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_15"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_15"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_15s"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_15"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_16"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_16"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_16s"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_16"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_17"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_17"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_17s"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_17"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_18"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_18"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_18s"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_18"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_19"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_19"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_19s"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_19"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_20"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_20"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_20s"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_20"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="4"
+	            android:text="@string/string_B"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Button
+	            android:id="@+id/btn_sub_B"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/subtract" />
+	
+	        <TextView
+	            android:id="@+id/text_Bs"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2"
+	            android:gravity="center" />
+	
+	        <Button
+	            android:id="@+id/btn_add_B"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/add" />
+	        
+	    </LinearLayout>
+	
+	</LinearLayout>
+    
+</ScrollView>

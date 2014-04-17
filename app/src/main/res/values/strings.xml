@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DartsScoring</string>
+    <string name="game_type_prompt">Select Game Type</string>
+    <string name="game_type_cricket">Cricket</string>
+    <string name="game_type_x01">x01</string>
+    <string name="game_type_golf">Golf</string>
+    <string name="game_type_baseball">Baseball</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cricket_main">Cricket</string>
+    <string name="title_activity_x01_main">x01</string>
+    <string name="title_activity_golf_main">Golf</string>
+    <string name="title_activity_baseball_main">Baseball</string>
+    <string name="title_activity_matchup_main">Match-ups</string>
+    <string name="matchup_prompt_string">Select a matchup</string>
+    <string name="new_player">Create New Player</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_view_history">Game Records</string>
+    <string name="title_activity_new_player">New Player</string>
+    <string name="view_game_history">View Game History</string>
+    <string name="player1_prompt">Name:</string>
+    <string name="create_matchup_create">Create</string>
+    <string name="create_matchup_cancel">Cancel</string>
+    <string name="vs_text">VS</string>
+    <string name="select_matchup_start_btn">Start</string>
+    <string name="title_activity_cricket">Cricket</string>
+    <string name="view_history_select_name">Touch name to view history</string>
+    <string name="title_activity_player_history">PlayerHistoryActivity</string>
+    <string name="player_history_title">Game History</string>
+    <string name="title_activity_x01">X01Activity</string>
+    <string name="title_activity_golf">GolfActivity</string>
+    <string name="title_activity_baseball">BaseballActivity</string>
+    
+    <string name="string_15">15</string>
+	<string name="string_16">16</string>
+	<string name="string_17">17</string>
+	<string name="string_18">18</string>
+	<string name="string_19">19</string>
+	<string name="string_20">20</string>
+	<string name="string_B">B</string>
+	
+	<string name="subtract">-</string>
+	<string name="add">+</string>
+	
+	<string name="enter_score">Enter Score</string>
+	<string name="clear_score">Clear</string>
+                
+
+</resources>
