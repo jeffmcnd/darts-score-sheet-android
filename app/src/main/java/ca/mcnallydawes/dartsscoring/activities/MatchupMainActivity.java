@@ -74,8 +74,7 @@ public class MatchupMainActivity extends Activity {
 							@Override
 							public void onClick(DialogInterface dialog,
 									int which) {
-								deletePlayer(((TextView) view).getText()
-										.toString());
+								deletePlayer(((TextView) view).getText().toString());
 							}
 						});
 
@@ -197,6 +196,15 @@ public class MatchupMainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		dataSource.open();
+
+        List<Player> values = dataSource.getAllPlayers();
+
+        ArrayAdapter<Player> adapter = new ArrayAdapter<Player>(this,
+                R.layout.darts_simple_list_item_single_choice, values);
+
+        listView1.setAdapter(adapter);
+        listView2.setAdapter(adapter);
+
 		super.onResume();
 	}
 

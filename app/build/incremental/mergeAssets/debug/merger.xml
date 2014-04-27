@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\debug\assets" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res" >
+            <file
+                name="ic_launcher"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="cork_green"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\cork_green.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="minus_white_button"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\minus_white_button.xml"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="minus_white_normal"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\minus_white_normal.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="minus_white_pressed"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\minus_white_pressed.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="plus_white_button"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\plus_white_button.xml"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="plus_white_normal"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\plus_white_normal.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="plus_white_pressed"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\drawable-xhdpi\plus_white_pressed.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="activity_baseball"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_baseball.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_cricket"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_cricket.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_golf"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_golf.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main_menu"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_main_menu.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_matchup_main"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_matchup_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_new_player"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_new_player.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_player_history"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_player_history.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_view_history"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_view_history.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_x01"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\activity_x01.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="background_repeat"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\background_repeat.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="darts_simple_list_item_1"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\darts_simple_list_item_1.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="darts_simple_list_item_single_choice"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\darts_simple_list_item_single_choice.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_cricket"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\layout\fragment_cricket.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_new_matchup"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\activity_new_matchup.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_view_games"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\activity_view_games.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="baseball"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\baseball.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="baseball_main"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\baseball_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="cricket"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\cricket.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="cricket_main"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\cricket_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="golf"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\golf.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="golf_main"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\golf_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="main_menu"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\main_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="matchup_main"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\matchup_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="player_history"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\player_history.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="x01"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\x01.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="x01_main"
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\menu\x01_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >8dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >8dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="title_activity_golf" >GolfActivity
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="game_type_baseball" >Baseball
+                </string>
+                <string name="title_activity_cricket_main" >Cricket
+                </string>
+                <string name="string_17" >17
+                </string>
+                <string name="string_18" >18
+                </string>
+                <string name="title_activity_x01" >X01Activity
+                </string>
+                <string name="string_15" >15
+                </string>
+                <string name="string_16" >16
+                </string>
+                <string name="string_19" >19
+                </string>
+                <string name="clear_score" >Clear
+                </string>
+                <string name="new_player" >Create New Player
+                </string>
+                <string name="title_activity_matchup_main" >Match-ups
+                </string>
+                <string name="player1_prompt" >Name:
+                </string>
+                <string name="game_type_prompt" >Select Game Type
+                </string>
+                <string name="title_activity_view_history" >Game Records
+                </string>
+                <string name="matchup_prompt_string" >Select a matchup
+                </string>
+                <string name="subtract" >-
+                </string>
+                <string name="game_type_x01" >x01
+                </string>
+                <string name="game_type_cricket" >Cricket
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="view_game_history" >View Game History
+                </string>
+                <string name="player_history_title" >Game History
+                </string>
+                <string name="view_history_select_name" >Touch name to view history
+                </string>
+                <string name="menu_settings" >Settings
+                </string>
+                <string name="title_activity_baseball_main" >Baseball
+                </string>
+                <string name="title_activity_x01_main" >x01
+                </string>
+                <string name="string_B" >B
+                </string>
+                <string name="select_matchup_start_btn" >Start
+                </string>
+                <string name="title_activity_player_history" >PlayerHistoryActivity
+                </string>
+                <string name="add" >+
+                </string>
+                <string name="vs_text" >VS
+                </string>
+                <string name="title_activity_baseball" >BaseballActivity
+                </string>
+                <string name="app_name" >DartsScoring
+                </string>
+                <string name="title_activity_cricket" >Cricket
+                </string>
+                <string name="create_matchup_cancel" >Cancel
+                </string>
+                <string name="title_activity_golf_main" >Golf
+                </string>
+                <string name="enter_score" >Enter Score
+                </string>
+                <string name="game_type_golf" >Golf
+                </string>
+                <string name="string_20" >20
+                </string>
+                <string name="title_activity_new_player" >New Player
+                </string>
+                <string name="create_matchup_create" >Create
+                </string>
+            </file>
+            <file
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\values-sw720dp-land\dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\values-v11\styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+        </source>
+        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\build\res\rs\debug" />
+        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\build\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\debug\res" />
+    </dataSet>
+
+</merger>

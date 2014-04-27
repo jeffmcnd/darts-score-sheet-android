@@ -49,9 +49,10 @@ public class NewPlayerActivity extends PortraitActivity {
 	}
 
 	public void cancelBtnTap(View v) {
-		Intent intent = new Intent(this, MatchupMainActivity.class);
-		intent.putExtra(ExtrasNames.GAME_TYPE, gameType);
-		startActivity(intent);
+//		Intent intent = new Intent(this, MatchupMainActivity.class);
+//		intent.putExtra(ExtrasNames.GAME_TYPE, gameType);
+//		startActivity(intent);
+        super.onBackPressed();
 	}
 
 	public void createBtnTap(View v) {
@@ -63,9 +64,10 @@ public class NewPlayerActivity extends PortraitActivity {
 					.show();
 		} else {
 			dataSource.createPlayer(newPlayerNameET.getText().toString());
-			Intent intent = new Intent(this, MatchupMainActivity.class);
-			intent.putExtra(ExtrasNames.GAME_TYPE, gameType);
-			startActivity(intent);
+//			Intent intent = new Intent(this, MatchupMainActivity.class);
+//			intent.putExtra(ExtrasNames.GAME_TYPE, gameType);
+//			startActivity(intent);
+            super.onBackPressed();
 		}
 	}
 

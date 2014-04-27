@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/cork_green"
+    tools:context=".PlayerHistoryActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_history_title"
+	    android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/player_history_cricket_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+	    	android:textColor="#FFFFFF"
+            android:text="@string/game_type_cricket"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/player_history_x01_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+	    	android:textColor="#FFFFFF"
+            android:text="@string/game_type_x01"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/player_history_golf_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+	    	android:textColor="#FFFFFF"
+            android:text="@string/game_type_golf"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/player_history_baseball_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+	    	android:textColor="#FFFFFF"
+            android:text="@string/game_type_baseball"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/player_history_LV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textColor="#FFFFFF" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/res/layout/activity_player_history.xml -->

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_enabled="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/plus_white_pressed" />
+    <item android:state_enabled="true"
+        android:drawable="@drawable/plus_white_normal" />
+</selector><!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/res/drawable-xhdpi/plus_white_button.xml -->
