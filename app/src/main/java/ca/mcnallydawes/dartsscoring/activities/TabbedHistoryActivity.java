@@ -229,13 +229,13 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
                     cricketSource.close();
                     break;
                 case 1:
-                    values.add("2");
+                    values.add("not implemented");
                     break;
                 case 2:
-                    values.add("3");
+                    values.add("not implemented");
                     break;
                 case 3:
-                    values.add("4");
+                    values.add("not implemented");
                     break;
                 default:
                     values.add("default");
