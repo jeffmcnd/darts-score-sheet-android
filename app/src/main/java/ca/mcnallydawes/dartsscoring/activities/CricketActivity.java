@@ -6,6 +6,7 @@ import java.util.Calendar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.util.Log;
@@ -190,10 +191,15 @@ public class CricketActivity extends PortraitActivity {
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage("Saving game.").setTitle("We have a winner!");
 
+            final CricketActivity act = this;
+
 			builder.setPositiveButton("Continue", new OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					CricketActivity.this.finish();
+//					CricketActivity.this.finish();
+                    Intent intent = new Intent(act, MainMenuActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
 				}
 			});
 

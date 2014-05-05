@@ -41,8 +41,8 @@ public class ViewHistoryActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				String name = ((TextView) view).getText().toString();
-				Intent intent = new Intent(getApplicationContext(),
-						PlayerHistoryActivity.class);
+//				Intent intent = new Intent(getApplicationContext(),	PlayerHistoryActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TabbedHistoryActivity.class);
 				intent.putExtra(ExtrasNames.PLAYER_NAME, name);
 				startActivity(intent);
 			}
@@ -51,8 +51,7 @@ public class ViewHistoryActivity extends Activity {
 
 	@Override
 	public void onBackPressed() {
-		Intent intent = new Intent(this, MainMenuActivity.class);
-		startActivity(intent);
+		super.onBackPressed();
 	}
 
 	@Override

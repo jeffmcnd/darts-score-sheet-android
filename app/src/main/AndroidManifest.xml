@@ -15,8 +15,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.MainMenuActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,64 +25,68 @@
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.CricketMainActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_cricket_main" >
+            android:label="@string/title_activity_cricket_main"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.X01MainActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_x01_main" >
+            android:label="@string/title_activity_x01_main"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.GolfMainActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_golf_main" >
+            android:label="@string/title_activity_golf_main"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.BaseballMainActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_baseball_main" >
+            android:label="@string/title_activity_baseball_main"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.MatchupMainActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_matchup_main" >
+            android:label="@string/title_activity_matchup_main"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.ViewHistoryActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_view_history" >
+            android:label="@string/title_activity_view_history"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.NewPlayerActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
             android:label="@string/title_activity_new_player"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
             android:windowSoftInputMode="stateVisible" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.CricketActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_cricket" >
+            android:label="@string/title_activity_cricket"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.PlayerHistoryActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_player_history" >
+            android:label="@string/title_activity_player_history"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.X01Activity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_x01" >
+            android:label="@string/title_activity_x01"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.GolfActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_golf" >
+            android:label="@string/title_activity_golf"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.BaseballActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"
-            android:label="@string/title_activity_baseball" >
+            android:label="@string/title_activity_baseball"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <activity
+            android:name="ca.mcnallydawes.dartsscoring.activities.TabbedHistoryActivity"
+            android:label="@string/title_activity_tabbed_history" >
         </activity>
     </application>
 

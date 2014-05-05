@@ -27,50 +27,63 @@
 	    <LinearLayout
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:orientation="vertical" >
+	        android:orientation="vertical"
+            android:gravity="center">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
 	
 	        <Button
 	            android:id="@+id/cricket_select_btn"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
+	            android:layout_width="0dp"
+	            android:layout_height="100dp"
+                android:layout_weight="1"
 	            android:text="@string/game_type_cricket"
 	            android:textColor="#FFFFFF"
 	            android:onClick="onClick" />
 	
 	        <Button
 	            android:id="@+id/x01_select_btn"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
+	            android:layout_width="0dp"
+	            android:layout_height="100dp"
+                android:layout_weight="1"
 	            android:text="@string/game_type_x01" 
 	            android:textColor="#FFFFFF"
 	            android:onClick="onClick" />
 	
-	        <Button
-	            android:id="@+id/golf_select_btn"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:text="@string/game_type_golf"
-	            android:textColor="#FFFFFF"
-	            android:onClick="onClick" />
+            </LinearLayout>
 	
-	        <Button
-	            android:id="@+id/baseball_select_btn"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:text="@string/game_type_baseball"
-	            android:textColor="#FFFFFF"
-	            android:onClick="onClick" />
-	        
-	        <Button
-	            android:id="@+id/view_history_btn"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:text="@string/view_game_history"
-	            android:textColor="#FFFFFF"
-	            android:onClick="onClick" />
-	
-	    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:id="@+id/golf_select_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/game_type_golf"
+                    android:textColor="#FFFFFF"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/baseball_select_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="@string/game_type_baseball"
+                    android:textColor="#FFFFFF"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/view_history_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="@string/view_game_history"
+                android:textColor="#FFFFFF"
+                android:onClick="onClick" />
+        </LinearLayout>
 	    
     </ScrollView>
 
-</LinearLayout><!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/res/layout/activity_main_menu.xml -->
+</LinearLayout><!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/res/layout/activity_main_menu.xml -->

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
+    <dataSet config="19.0.1" >
+        <source path="/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/assets" />
+    </dataSet>
     <dataSet config="main" >
-        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\main\assets" />
+        <source path="/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\jeffrey\workspace\android\darts-score-sheet-android\app\src\debug\assets" />
+        <source path="/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/debug/assets" />
     </dataSet>
 
 </merger>

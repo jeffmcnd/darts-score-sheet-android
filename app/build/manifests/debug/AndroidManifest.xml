@@ -1,4 +1,5 @@
-<!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ca.mcnallydawes.dartsscoring">
+<!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="ca.mcnallydawes.dartsscoring">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
 
@@ -33,6 +34,8 @@
         <activity android:label="@string/title_activity_golf" android:name="ca.mcnallydawes.dartsscoring.activities.GolfActivity" android:theme="@android:style/Theme.Holo.NoActionBar">
         </activity>
         <activity android:label="@string/title_activity_baseball" android:name="ca.mcnallydawes.dartsscoring.activities.BaseballActivity" android:theme="@android:style/Theme.Holo.NoActionBar">
+        </activity>
+        <activity android:label="@string/title_activity_tabbed_history" android:name="ca.mcnallydawes.dartsscoring.activities.TabbedHistoryActivity">
         </activity>
     </application>
 

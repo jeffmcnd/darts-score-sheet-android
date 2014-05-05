@@ -32,20 +32,24 @@
     <string name="title_activity_x01">X01Activity</string>
     <string name="title_activity_golf">GolfActivity</string>
     <string name="title_activity_baseball">BaseballActivity</string>
-    
     <string name="string_15">15</string>
-	<string name="string_16">16</string>
-	<string name="string_17">17</string>
-	<string name="string_18">18</string>
-	<string name="string_19">19</string>
-	<string name="string_20">20</string>
-	<string name="string_B">B</string>
-	
-	<string name="subtract">-</string>
-	<string name="add">+</string>
-	
-	<string name="enter_score">Enter Score</string>
-	<string name="clear_score">Clear</string>
-                
+    <string name="string_16">16</string>
+    <string name="string_17">17</string>
+    <string name="string_18">18</string>
+    <string name="string_19">19</string>
+    <string name="string_20">20</string>
+    <string name="string_B">B</string>
+    <string name="subtract">-</string>
+    <string name="add">+</string>
+    <string name="end_turn">End Turn</string>
+    <string name="clear_score">Clear</string>
+    <string name="title_activity_tabbed_history">TabbedHistoryActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="history_section1">Cricket</string>
+    <string name="history_section2">x01</string>
+    <string name="history_section3">Golf</string>
+    <string name="history_section4">Baseball</string>
 
 </resources>

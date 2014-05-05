@@ -5,4 +5,4 @@
         android:drawable="@drawable/minus_white_pressed" />
     <item android:state_enabled="true"
         android:drawable="@drawable/minus_white_normal" />
-</selector><!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/res/drawable-xhdpi/minus_white_button.xml -->
+</selector><!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/res/drawable-xhdpi/minus_white_button.xml -->

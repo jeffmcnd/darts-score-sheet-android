@@ -22,9 +22,7 @@
     <ScrollView
     	android:layout_width="match_parent"
     	android:layout_height="0dp"
-    	android:layout_weight="7"
-    	android:paddingTop="@dimen/activity_vertical_margin"
-    	android:paddingBottom="@dimen/activity_vertical_margin" >
+    	android:layout_weight="7" >
     
 	    <LinearLayout
 		    android:layout_width="match_parent"
@@ -41,6 +39,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_15"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -81,6 +80,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_16"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -121,6 +121,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_17"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -161,6 +162,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_18"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -201,6 +203,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_19"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -241,6 +244,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_20"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -281,6 +285,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="4"
 		            android:text="@string/string_B"
+                    android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
 		
@@ -321,9 +326,8 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="enterScore"
-        android:text="@string/enter_score"
+        android:text="@string/end_turn"
         android:textColor="#FFFFFF"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:background="#4F4F4c" />
+        android:background="#4F4F4C" />
 
-</LinearLayout><!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/res/layout/activity_cricket.xml -->
+</LinearLayout><!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/res/layout/activity_cricket.xml -->

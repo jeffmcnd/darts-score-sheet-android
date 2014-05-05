@@ -165,8 +165,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/enter_score" />
+            android:text="@string/end_turn" />
 
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/C:/Users/jeffrey/workspace/android/darts-score-sheet-android/app/src/main/res/layout/activity_x01.xml -->
+</LinearLayout><!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/res/layout/activity_x01.xml -->
