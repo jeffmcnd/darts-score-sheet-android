@@ -92,20 +92,39 @@ public class x01DataSource {
 		return games;
 	}
 
+    public List<x01Game> getAllX01GamesWhere(String question,
+                                                     String[] args) {
+        List<x01Game> games = new ArrayList<x01Game>();
+
+        Cursor cursor = database.query(MySQLiteHelper.TABLE_X01,
+                allColumns, question, args, null, null, null);
+
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            x01Game game = cursorToX01Game(cursor);
+            games.add(game);
+            cursor.moveToNext();
+        }
+
+        // Make sure to close the cursor
+        cursor.close();
+        return games;
+    }
+
 	private x01Game cursorToX01Game(Cursor cursor) {
 		x01Game game = new x01Game();
 
 		game.setId(cursor.getLong(0));
 		game.setPlayer1(cursor.getString(1));
 		game.setPlayer2(cursor.getString(2));
-		game.setStartingNumber(cursor.getString(4));
-		game.setPlayer1PPT(cursor.getString(5));
-		game.setPlayer2PPT(cursor.getString(6));
-		game.setWinner(cursor.getString(7));
-		game.setLoser(cursor.getString(8));
-		game.setDate(cursor.getString(9));
-		game.setStart(cursor.getString(10));
-		game.setFinish(cursor.getString(11));
+		game.setStartingNumber(cursor.getString(3));
+		game.setPlayer1PPT(cursor.getString(4));
+		game.setPlayer2PPT(cursor.getString(5));
+		game.setWinner(cursor.getString(6));
+		game.setLoser(cursor.getString(7));
+		game.setDate(cursor.getString(8));
+		game.setStart(cursor.getString(9));
+		game.setFinish(cursor.getString(10));
 
 		return game;
 	}

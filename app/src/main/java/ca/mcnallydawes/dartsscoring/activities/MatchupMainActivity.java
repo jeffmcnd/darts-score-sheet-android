@@ -1,5 +1,6 @@
 package ca.mcnallydawes.dartsscoring.activities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
@@ -128,10 +129,9 @@ public class MatchupMainActivity extends Activity {
 				break;
 			case 2:
 				Intent x01Intent = new Intent(this, X01Activity.class);
-				x01Intent
-						.putExtra(ExtrasNames.SELECTED_PLAYER_1, selectedName1);
-				x01Intent
-						.putExtra(ExtrasNames.SELECTED_PLAYER_2, selectedName2);
+				x01Intent.putExtra(ExtrasNames.SELECTED_PLAYER_1, selectedName1);
+				x01Intent.putExtra(ExtrasNames.SELECTED_PLAYER_2, selectedName2);
+                x01Intent.putExtra(ExtrasNames.SELECTED_X01_NUMBER, 501);
 				startActivity(x01Intent);
 				break;
 			case 3:

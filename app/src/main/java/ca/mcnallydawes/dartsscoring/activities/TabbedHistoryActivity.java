@@ -24,7 +24,9 @@ import ca.mcnallydawes.dartsscoring.ExtrasNames;
 import ca.mcnallydawes.dartsscoring.MySQLiteHelper;
 import ca.mcnallydawes.dartsscoring.R;
 import ca.mcnallydawes.dartsscoring.datasources.CricketDataSource;
+import ca.mcnallydawes.dartsscoring.datasources.x01DataSource;
 import ca.mcnallydawes.dartsscoring.models.CricketGame;
+import ca.mcnallydawes.dartsscoring.models.x01Game;
 
 public class TabbedHistoryActivity extends ActionBarActivity implements ActionBar.TabListener {
 
@@ -206,17 +208,16 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
 
             List<String> values = new ArrayList<String>();
 
+            String[] args = new String[2];
+            args[0] = playerName;
+            args[1] = playerName;
+
+            String question = MySQLiteHelper.COLUMN_PLAYER_1 + " = ? OR " + MySQLiteHelper.COLUMN_PLAYER_2 + " = ? ";
+
             switch (sectionNum) {
                 case 0:
                     CricketDataSource cricketSource = new CricketDataSource(getActivity());
                     cricketSource.open();
-
-                    String[] args = new String[2];
-                    args[0] = playerName;
-                    args[1] = playerName;
-
-                    String question = MySQLiteHelper.COLUMN_PLAYER_1 + " = ? OR "
-                            + MySQLiteHelper.COLUMN_PLAYER_2 + " = ?";
 
                     List<CricketGame> cricketGames = cricketSource
                             .getAllCricketGamesWhere(question, args);
@@ -229,7 +230,16 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
                     cricketSource.close();
                     break;
                 case 1:
-                    values.add("not implemented");
+                    x01DataSource x01Source = new x01DataSource(getActivity());
+                    x01Source.open();
+
+                    List<x01Game> x01Games = x01Source.getAllX01GamesWhere(question, args);
+
+                    for(x01Game game : x01Games) {
+                        values.add(game.getDate() + " " + game.getWinner() + " beat " + game.getLoser() + " at " + game.getFinish());
+                    }
+
+                    x01Source.close();
                     break;
                 case 2:
                     values.add("not implemented");

@@ -518,6 +518,7 @@
     <string name="action_settings">Settings</string>
     <string name="add">+</string>
     <string name="app_name">DartsScoring</string>
+    <string name="back">Back</string>
     <string name="clear_score">Clear</string>
     <string name="create_matchup_cancel">Cancel</string>
     <string name="create_matchup_create">Create</string>
@@ -538,6 +539,20 @@
     <string name="player1_prompt">Name:</string>
     <string name="player_history_title">Game History</string>
     <string name="select_matchup_start_btn">Start</string>
+    <string name="string_01">1</string>
+    <string name="string_02">2</string>
+    <string name="string_03">3</string>
+    <string name="string_04">4</string>
+    <string name="string_05">5</string>
+    <string name="string_06">6</string>
+    <string name="string_07">7</string>
+    <string name="string_08">8</string>
+    <string name="string_09">9</string>
+    <string name="string_10">10</string>
+    <string name="string_11">11</string>
+    <string name="string_12">12</string>
+    <string name="string_13">13</string>
+    <string name="string_14">14</string>
     <string name="string_15">15</string>
     <string name="string_16">16</string>
     <string name="string_17">17</string>
@@ -545,6 +560,7 @@
     <string name="string_19">19</string>
     <string name="string_20">20</string>
     <string name="string_B">B</string>
+    <string name="string_doubleB">Double B</string>
     <string name="subtract">-</string>
     <string name="title_activity_baseball">BaseballActivity</string>
     <string name="title_activity_baseball_main">Baseball</string>
@@ -562,6 +578,7 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+    <string name="undo">Undo</string>
     <string name="view_game_history">View Game History</string>
     <string name="view_history_select_name">Touch name to view history</string>
     <string name="vs_text">VS</string>

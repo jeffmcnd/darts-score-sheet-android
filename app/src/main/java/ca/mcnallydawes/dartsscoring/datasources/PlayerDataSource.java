@@ -59,7 +59,7 @@ public class PlayerDataSource {
 		List<Player> players = new ArrayList<Player>();
 
 		Cursor cursor = database.query(MySQLiteHelper.TABLE_PLAYER, allColumns,
-				null, null, null, null, null);
+				null, null, null, null, "name ASC");
 
 		cursor.moveToFirst();
 		while (!cursor.isAfterLast()) {

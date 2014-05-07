@@ -52,44 +52,49 @@
         android:layout_weight="4"
         android:gravity="center" >
 
+
+
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <Button
-                android:id="@+id/x01_button_15"
+                android:id="@+id/x01_button_01"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_15" />
+                android:text="@string/string_01"
+                android:tag="1"
+                android:onClick="scoreBtnTap" />
 
             <Button
-                android:id="@+id/x01_button_16"
+                android:id="@+id/x01_button_02"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_16" />
+                android:text="@string/string_02"
+                android:tag="2"
+                android:onClick="scoreBtnTap" />
 
             <Button
-                android:id="@+id/x01_button_17"
+                android:id="@+id/x01_button_03"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_17" />
+                android:text="@string/string_03"
+                android:tag="3"
+                android:onClick="scoreBtnTap" />
 
-        </TableRow>
+            <Button
+                android:id="@+id/x01_button_04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_04"
+                android:tag="4"
+                android:onClick="scoreBtnTap" />
 
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-            
-            <TextView
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:visibility="invisible" />
-            
         </TableRow>
 
         <TableRow
@@ -98,38 +103,41 @@
             android:layout_height="wrap_content" >
 
             <Button
-                android:id="@+id/x01_button_18"
+                android:id="@+id/x01_button_05"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_18" />
+                android:text="@string/string_05"
+                android:tag="5"
+                android:onClick="scoreBtnTap" />
 
             <Button
-                android:id="@+id/x01_button_19"
+                android:id="@+id/x01_button_06"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_19" />
+                android:text="@string/string_06"
+                android:tag="6"
+                android:onClick="scoreBtnTap" />
 
             <Button
-                android:id="@+id/x01_button_20"
+                android:id="@+id/x01_button_07"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_20" />
+                android:text="@string/string_07"
+                android:tag="7"
+                android:onClick="scoreBtnTap" />
 
-        </TableRow>
+            <Button
+                android:id="@+id/x01_button_08"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_08"
+                android:tag="8"
+                android:onClick="scoreBtnTap" />
 
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-            
-            <TextView
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:visibility="invisible" />
-            
         </TableRow>
 
         <TableRow
@@ -138,11 +146,142 @@
             android:layout_height="wrap_content" >
 
             <Button
+                android:id="@+id/x01_button_09"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_09"
+                android:tag="9"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_10"
+                android:tag="10"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_11"
+                android:tag="11"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_12"
+                android:tag="12"
+                android:onClick="scoreBtnTap" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/x01_button_13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_13"
+                android:tag="13"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_14"
+                android:tag="14"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_15"
+                android:tag="15"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_16"
+                android:tag="16"
+                android:onClick="scoreBtnTap" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/x01_button_17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_17"
+                android:tag="17"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_18"
+                android:tag="18"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_19"
+                android:tag="19"
+                android:onClick="scoreBtnTap" />
+
+            <Button
+                android:id="@+id/x01_button_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/string_20"
+                android:tag="20"
+                android:onClick="scoreBtnTap" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
                 android:id="@+id/x01_button_B"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/string_B" />
+                android:text="@string/string_B"
+                android:tag="25"
+                android:onClick="scoreBtnTap" />
 
         </TableRow>
     </TableLayout>
@@ -154,18 +293,27 @@
         android:gravity="center" >
 
         <Button
-            android:id="@+id/x01_button_clear"
+            android:id="@+id/x01_button_undo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/clear_score" />
+            android:text="@string/undo"
+            android:onClick="undoBtnTap" />
+
+        <!--<Button-->
+            <!--android:id="@+id/x01_button_clear"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/clear_score" />-->
 
         <Button
             android:id="@+id/x01_button_enter"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/end_turn" />
+            android:text="@string/end_turn"
+            android:onClick="endTurnBtnTap" />
 
     </LinearLayout>
 
