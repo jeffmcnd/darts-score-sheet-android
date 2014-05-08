@@ -23,8 +23,10 @@ import android.widget.ListView;
 import ca.mcnallydawes.dartsscoring.ExtrasNames;
 import ca.mcnallydawes.dartsscoring.MySQLiteHelper;
 import ca.mcnallydawes.dartsscoring.R;
+import ca.mcnallydawes.dartsscoring.datasources.BaseballDataSource;
 import ca.mcnallydawes.dartsscoring.datasources.CricketDataSource;
 import ca.mcnallydawes.dartsscoring.datasources.x01DataSource;
+import ca.mcnallydawes.dartsscoring.models.BaseballGame;
 import ca.mcnallydawes.dartsscoring.models.CricketGame;
 import ca.mcnallydawes.dartsscoring.models.x01Game;
 
@@ -245,7 +247,16 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
                     values.add("not implemented");
                     break;
                 case 3:
-                    values.add("not implemented");
+                    BaseballDataSource baseballSource = new BaseballDataSource(getActivity());
+                    baseballSource.open();
+
+                    List<BaseballGame> baseballGames = baseballSource.getAllBaseballGamesWhere(question, args);
+
+                    for(BaseballGame game : baseballGames) {
+                        values.add(game.getDate() + " " + game.getWinner() + " beat " + game.getLoser() + " at " + game.getFinish());
+                    }
+
+                    baseballSource.close();
                     break;
                 default:
                     values.add("default");

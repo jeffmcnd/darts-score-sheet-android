@@ -88,6 +88,10 @@
             android:name="ca.mcnallydawes.dartsscoring.activities.TabbedHistoryActivity"
             android:label="@string/title_activity_tabbed_history" >
         </activity>
+        <activity
+            android:name="ca.mcnallydawes.dartsscoring.activities.BaseballStandingsactivity"
+            android:label="@string/title_activity_baseball_standingsactivity" >
+        </activity>
     </application>
 
 </manifest>

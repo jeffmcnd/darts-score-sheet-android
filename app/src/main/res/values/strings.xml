@@ -68,5 +68,11 @@
     <string name="history_section2">x01</string>
     <string name="history_section3">Golf</string>
     <string name="history_section4">Baseball</string>
+    <string name="title_activity_baseball_standingsactivity">BaseballStandingsactivity</string>
+
+    <!--Baseball Text-->
+    <string name="inning">Inning</string>
+    <string name="standings">Standings</string>
+    <string name="enter_score">Enter Score</string>
 
 </resources>

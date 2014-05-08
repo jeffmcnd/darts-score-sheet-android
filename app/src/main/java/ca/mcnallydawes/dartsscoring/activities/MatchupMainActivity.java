@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import ca.mcnallydawes.dartsscoring.ExtrasNames;
 import ca.mcnallydawes.dartsscoring.R;
+import ca.mcnallydawes.dartsscoring.datasources.BaseballDataSource;
 import ca.mcnallydawes.dartsscoring.datasources.PlayerDataSource;
 import ca.mcnallydawes.dartsscoring.models.Player;
 
@@ -135,19 +136,15 @@ public class MatchupMainActivity extends Activity {
 				startActivity(x01Intent);
 				break;
 			case 3:
-				Intent golfIntent = new Intent(this, CricketActivity.class);
-				golfIntent.putExtra(ExtrasNames.SELECTED_PLAYER_1,
-						selectedName1);
-				golfIntent.putExtra(ExtrasNames.SELECTED_PLAYER_2,
-						selectedName2);
+				Intent golfIntent = new Intent(this, GolfActivity.class);
+				golfIntent.putExtra(ExtrasNames.SELECTED_PLAYER_1, selectedName1);
+				golfIntent.putExtra(ExtrasNames.SELECTED_PLAYER_2, selectedName2);
 				startActivity(golfIntent);
 				break;
 			case 4:
-				Intent baseballIntent = new Intent(this, CricketActivity.class);
-				baseballIntent.putExtra(ExtrasNames.SELECTED_PLAYER_1,
-						selectedName1);
-				baseballIntent.putExtra(ExtrasNames.SELECTED_PLAYER_2,
-						selectedName2);
+				Intent baseballIntent = new Intent(this, BaseballActivity.class);
+				baseballIntent.putExtra(ExtrasNames.SELECTED_PLAYER_1, selectedName1);
+				baseballIntent.putExtra(ExtrasNames.SELECTED_PLAYER_2, selectedName2);
 				startActivity(baseballIntent);
 				break;
 			default:

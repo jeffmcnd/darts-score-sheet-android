@@ -37,6 +37,8 @@
         </activity>
         <activity android:label="@string/title_activity_tabbed_history" android:name="ca.mcnallydawes.dartsscoring.activities.TabbedHistoryActivity">
         </activity>
+        <activity android:label="@string/title_activity_baseball_standingsactivity" android:name="ca.mcnallydawes.dartsscoring.activities.BaseballStandingsactivity">
+        </activity>
     </application>
 
 </manifest>

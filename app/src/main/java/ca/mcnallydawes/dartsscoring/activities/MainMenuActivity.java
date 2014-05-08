@@ -44,9 +44,4 @@ public class MainMenuActivity extends Activity {
 		}
 		overridePendingTransition(0, 0);
 	}
-
-	@Override
-	public void onBackPressed() {
-		moveTaskToBack(true);
-	}
 }
