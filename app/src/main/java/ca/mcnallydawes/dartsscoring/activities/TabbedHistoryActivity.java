@@ -25,9 +25,11 @@ import ca.mcnallydawes.dartsscoring.MySQLiteHelper;
 import ca.mcnallydawes.dartsscoring.R;
 import ca.mcnallydawes.dartsscoring.datasources.BaseballDataSource;
 import ca.mcnallydawes.dartsscoring.datasources.CricketDataSource;
+import ca.mcnallydawes.dartsscoring.datasources.GolfDataSource;
 import ca.mcnallydawes.dartsscoring.datasources.x01DataSource;
 import ca.mcnallydawes.dartsscoring.models.BaseballGame;
 import ca.mcnallydawes.dartsscoring.models.CricketGame;
+import ca.mcnallydawes.dartsscoring.models.GolfGame;
 import ca.mcnallydawes.dartsscoring.models.x01Game;
 
 public class TabbedHistoryActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -244,7 +246,16 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
                     x01Source.close();
                     break;
                 case 2:
-                    values.add("not implemented");
+                    GolfDataSource golfSource = new GolfDataSource(getActivity());
+                    golfSource.open();
+
+                    List<GolfGame> golfGames = golfSource.getAllGolfGamesWhere(question, args);
+
+                    for(GolfGame game : golfGames) {
+                        values.add(game.getDate() + " " + game.getWinner() + " beat " + game.getLoser() + " at " + game.getFinish());
+                    }
+
+                    golfSource.close();
                     break;
                 case 3:
                     BaseballDataSource baseballSource = new BaseballDataSource(getActivity());

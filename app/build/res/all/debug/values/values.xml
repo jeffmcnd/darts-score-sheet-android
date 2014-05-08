@@ -534,6 +534,7 @@
     <string name="history_section2">x01</string>
     <string name="history_section3">Golf</string>
     <string name="history_section4">Baseball</string>
+    <string name="hole">Hole</string>
     <string name="inning">Inning</string>
     <string name="matchup_prompt_string">Select a matchup</string>
     <string name="menu_settings">Settings</string>

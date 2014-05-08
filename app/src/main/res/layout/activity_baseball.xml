@@ -123,28 +123,28 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/player_1_name_textView"
+        <TextView android:id="@+id/baseball_player_1_name_textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-        <TextView android:id="@+id/palyer_1_score_textView"
+        <TextView android:id="@+id/baseball_player_1_score_textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-        <TextView android:id="@+id/player_2_name_textView"
+        <TextView android:id="@+id/baseball_player_2_name_textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-        <TextView android:id="@+id/palyer_2_score_textView"
+        <TextView android:id="@+id/baseball_player_2_score_textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

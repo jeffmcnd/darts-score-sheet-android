@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ca.mcnallydawes.dartsscoring.MySQLiteHelper;
+import ca.mcnallydawes.dartsscoring.models.BaseballGame;
 import ca.mcnallydawes.dartsscoring.models.GolfGame;
 
 import android.content.ContentValues;
@@ -92,20 +93,38 @@ public class GolfDataSource {
 		return games;
 	}
 
+    public List<GolfGame> getAllGolfGamesWhere(String question, String[] args) {
+        List<GolfGame> games = new ArrayList<GolfGame>();
+
+        Cursor cursor = database.query(MySQLiteHelper.TABLE_GOLF,
+                allColumns, question, args, null, null, null);
+
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            GolfGame game = cursorToGolfGame(cursor);
+            games.add(game);
+            cursor.moveToNext();
+        }
+
+        // Make sure to close the cursor
+        cursor.close();
+        return games;
+    }
+
 	private GolfGame cursorToGolfGame(Cursor cursor) {
 		GolfGame game = new GolfGame();
 
 		game.setId(cursor.getLong(0));
 		game.setPlayer1(cursor.getString(1));
 		game.setPlayer2(cursor.getString(2));
-		game.setNumHoles(cursor.getString(4));
-		game.setPlayer1Scores(cursor.getString(5));
-		game.setPlayer2Scores(cursor.getString(6));
-		game.setWinner(cursor.getString(7));
-		game.setLoser(cursor.getString(8));
-		game.setDate(cursor.getString(9));
-		game.setStart(cursor.getString(10));
-		game.setFinish(cursor.getString(11));
+		game.setNumHoles(cursor.getString(3));
+		game.setPlayer1Scores(cursor.getString(4));
+		game.setPlayer2Scores(cursor.getString(5));
+		game.setWinner(cursor.getString(6));
+		game.setLoser(cursor.getString(7));
+		game.setDate(cursor.getString(8));
+		game.setStart(cursor.getString(9));
+		game.setFinish(cursor.getString(10));
 
 		return game;
 	}

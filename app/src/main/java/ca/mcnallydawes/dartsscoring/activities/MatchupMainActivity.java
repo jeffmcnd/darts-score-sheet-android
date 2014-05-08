@@ -139,6 +139,7 @@ public class MatchupMainActivity extends Activity {
 				Intent golfIntent = new Intent(this, GolfActivity.class);
 				golfIntent.putExtra(ExtrasNames.SELECTED_PLAYER_1, selectedName1);
 				golfIntent.putExtra(ExtrasNames.SELECTED_PLAYER_2, selectedName2);
+                golfIntent.putExtra(ExtrasNames.GOLF_MAX_HOLES, 9);
 				startActivity(golfIntent);
 				break;
 			case 4:

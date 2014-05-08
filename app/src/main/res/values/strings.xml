@@ -70,9 +70,14 @@
     <string name="history_section4">Baseball</string>
     <string name="title_activity_baseball_standingsactivity">BaseballStandingsactivity</string>
 
-    <!--Baseball Text-->
-    <string name="inning">Inning</string>
+    <!--General-->
     <string name="standings">Standings</string>
     <string name="enter_score">Enter Score</string>
+
+    <!--Baseball Text-->
+    <string name="inning">Inning</string>
+
+    <!--Golf Text-->
+    <string name="hole">Hole</string>
 
 </resources>

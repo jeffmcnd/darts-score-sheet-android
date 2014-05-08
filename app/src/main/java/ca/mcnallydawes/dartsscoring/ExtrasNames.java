@@ -11,4 +11,6 @@ public class ExtrasNames {
     public static final String PLAYER_2_SCORE = "player2Score";
 
 	public static final String SELECTED_X01_NUMBER = "x01StartingNumber";
+
+    public static final String GOLF_MAX_HOLES = "golfMaxHoles";
 }

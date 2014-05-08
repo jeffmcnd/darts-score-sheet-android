@@ -6,12 +6,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.Time;
-import android.util.Log;
 import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -19,7 +17,6 @@ import java.util.Calendar;
 import ca.mcnallydawes.dartsscoring.ExtrasNames;
 import ca.mcnallydawes.dartsscoring.R;
 import ca.mcnallydawes.dartsscoring.datasources.BaseballDataSource;
-import ca.mcnallydawes.dartsscoring.datasources.x01DataSource;
 
 public class BaseballActivity extends Activity {
 
@@ -84,10 +81,10 @@ public class BaseballActivity extends Activity {
         titleTextView.setText(playerNames[currentPlayerNumber] + "'s turn");
         inningTextView.setText(String.valueOf(currentInning));
 
-        player1NameTextView = (TextView)findViewById(R.id.player_1_name_textView);
-        player2NameTextView = (TextView)findViewById(R.id.player_2_name_textView);
-        player1ScoreTextView = (TextView)findViewById(R.id.palyer_1_score_textView);
-        player2ScoreTextView = (TextView)findViewById(R.id.palyer_2_score_textView);
+        player1NameTextView = (TextView)findViewById(R.id.baseball_player_1_name_textView);
+        player2NameTextView = (TextView)findViewById(R.id.baseball_player_2_name_textView);
+        player1ScoreTextView = (TextView)findViewById(R.id.baseball_player_1_score_textView);
+        player2ScoreTextView = (TextView)findViewById(R.id.baseball_player_2_score_textView);
 
         player1NameTextView.setText(playerNames[0]);
         player2NameTextView.setText(playerNames[1]);
@@ -119,8 +116,10 @@ public class BaseballActivity extends Activity {
         });
 
         if(playerScores[0] > playerScores[1]) {
+            currentPlayerNumber = 0;
             builder.setTitle(playerNames[0] + " wins!");
         } else {
+            currentPlayerNumber = 1;
             builder.setTitle(playerNames[1] + " wins!");
         }
 
