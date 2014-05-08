@@ -45,6 +45,7 @@ public class ViewHistoryActivity extends Activity {
                 Intent intent = new Intent(getApplicationContext(), TabbedHistoryActivity.class);
 				intent.putExtra(ExtrasNames.PLAYER_NAME, name);
 				startActivity(intent);
+                overridePendingTransition(0, 0);
 			}
 		});
 	}
@@ -52,6 +53,7 @@ public class ViewHistoryActivity extends Activity {
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
+        overridePendingTransition(0, 0);
 	}
 
 	@Override

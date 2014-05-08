@@ -12,7 +12,18 @@
     <RelativeLayout android:id="@+id/matchup_header_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/matchup_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/matchup_prompt_string"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Button
             android:id="@+id/new_matchup_btn"
@@ -24,16 +35,6 @@
             android:textColor="#FFFFFF"
             android:text="@string/new_player" />
 
-        <TextView
-            android:id="@+id/matchup_prompt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:text="@string/matchup_prompt_string"
-	        android:textColor="#FFFFFF"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-        
     </RelativeLayout>
     
     <LinearLayout android:id="@+id/matchup_lists"

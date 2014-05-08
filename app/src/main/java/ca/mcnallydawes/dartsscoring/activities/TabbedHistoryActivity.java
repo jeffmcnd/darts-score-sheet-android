@@ -99,6 +99,11 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(0, 0);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -272,6 +277,10 @@ public class TabbedHistoryActivity extends ActionBarActivity implements ActionBa
                 default:
                     values.add("default");
                     break;
+            }
+
+            if(values.size() == 0) {
+                values.add("No games played.");
             }
 
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.darts_simple_list_item_1, values);

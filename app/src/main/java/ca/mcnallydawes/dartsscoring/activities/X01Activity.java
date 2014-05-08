@@ -75,6 +75,15 @@ public class X01Activity extends Activity {
 		playerScores[1] = gameNumber;
 	}
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
     private void addToCurrentScore(int num) {
         int result = playerScores[currentPlayerNumber] + num;
         if(result < 0) {
@@ -148,6 +157,7 @@ public class X01Activity extends Activity {
         currentPlayerNumber = (currentPlayerNumber + 1) % 2;
         currentPlayerName.setText(playerNames[currentPlayerNumber]);
         currentPlayerScore.setText(String.valueOf(playerScores[currentPlayerNumber]));
+        scoreHistory = new ArrayList<Integer>();
     }
 
     public void undoBtnTap(View v) {

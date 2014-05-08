@@ -37,11 +37,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_15"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_15"
@@ -49,13 +54,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_15s"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -66,7 +71,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+		            android:text="+" />
 		        
 		    </LinearLayout>
 		    
@@ -78,11 +83,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_16"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_16"
@@ -90,13 +100,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_16s"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -107,7 +117,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+		            android:text="+" />
 		        
 		    </LinearLayout>
 		    
@@ -119,11 +129,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_17"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_17"
@@ -131,13 +146,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_17s"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -148,7 +163,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+		            android:text="+" />
 		        
 		    </LinearLayout>
 		    
@@ -160,11 +175,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_18"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_18"
@@ -172,13 +192,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_18s"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -189,7 +209,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+		            android:text="+" />
 		        
 		    </LinearLayout>
 		    
@@ -201,11 +221,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_19"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_19"
@@ -213,13 +238,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_19s"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -230,7 +255,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+		            android:text="+" />
 		        
 		    </LinearLayout>
 		    
@@ -242,11 +267,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_20"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_20"
@@ -254,13 +284,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_20s"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -271,7 +301,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+		            android:text="+" />
 		        
 		    </LinearLayout>
 		    
@@ -283,11 +313,16 @@
 		        <TextView
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="4"
+		            android:layout_weight="1"
 		            android:text="@string/string_B"
                     android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
 		
 		        <Button
 		            android:id="@+id/btn_sub_B"
@@ -295,13 +330,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="subFromScore"
-		            android:background="@drawable/minus_white_button" />
+		            android:text="-" />
 		
 		        <TextView
 		            android:id="@+id/text_Bs"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"
-		            android:layout_weight="2"
+		            android:layout_weight="1"
 		            android:gravity="center"
 		            android:textAppearance="?android:attr/textAppearanceLarge"
 		            android:textColor="#FFFFFF" />
@@ -312,7 +347,7 @@
 		            android:layout_height="wrap_content"
 		            android:layout_weight="1"
 		            android:onClick="addToScore"
-		            android:background="@drawable/plus_white_button" />
+                    android:text="+" />
 		        
 		    </LinearLayout>
 		
@@ -326,8 +361,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:onClick="enterScore"
-        android:text="@string/end_turn"
-        android:textColor="#FFFFFF"
-        android:background="#4F4F4C" />
+        android:text="@string/end_turn" />
 
 </LinearLayout><!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/res/layout/activity_cricket.xml -->

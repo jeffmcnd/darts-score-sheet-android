@@ -14,7 +14,19 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Tabcolors</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Tabcolors</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Tabcolors" parent="Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_tabcolors</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tabcolors" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_tabcolors</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_tabcolors</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_tabcolors</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Tabcolors</item>
     </style>
 
 </resources>

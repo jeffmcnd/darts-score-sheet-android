@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppBaseTheme" >
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.MainMenuActivity"
             android:label="@string/app_name"
@@ -22,26 +22,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="ca.mcnallydawes.dartsscoring.CricketMainActivity"
-            android:label="@string/title_activity_cricket_main"
-            android:theme="@android:style/Theme.Holo.NoActionBar" >
-        </activity>
-        <activity
-            android:name="ca.mcnallydawes.dartsscoring.X01MainActivity"
-            android:label="@string/title_activity_x01_main"
-            android:theme="@android:style/Theme.Holo.NoActionBar" >
-        </activity>
-        <activity
-            android:name="ca.mcnallydawes.dartsscoring.GolfMainActivity"
-            android:label="@string/title_activity_golf_main"
-            android:theme="@android:style/Theme.Holo.NoActionBar" >
-        </activity>
-        <activity
-            android:name="ca.mcnallydawes.dartsscoring.BaseballMainActivity"
-            android:label="@string/title_activity_baseball_main"
-            android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.MatchupMainActivity"
@@ -86,11 +66,8 @@
         </activity>
         <activity
             android:name="ca.mcnallydawes.dartsscoring.activities.TabbedHistoryActivity"
-            android:label="@string/title_activity_tabbed_history" >
-        </activity>
-        <activity
-            android:name="ca.mcnallydawes.dartsscoring.activities.BaseballStandingsactivity"
-            android:label="@string/title_activity_baseball_standingsactivity" >
+            android:label="@string/title_activity_tabbed_history"
+            android:theme="@style/AppTheme" >
         </activity>
     </application>
 

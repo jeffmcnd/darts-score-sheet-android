@@ -126,7 +126,7 @@ public class MatchupMainActivity extends Activity {
 				Intent intent = new Intent(this, CricketActivity.class);
 				intent.putExtra(ExtrasNames.SELECTED_PLAYER_1, selectedName1);
 				intent.putExtra(ExtrasNames.SELECTED_PLAYER_2, selectedName2);
-				startActivity(intent);
+                startActivity(intent);
 				break;
 			case 2:
 				Intent x01Intent = new Intent(this, X01Activity.class);

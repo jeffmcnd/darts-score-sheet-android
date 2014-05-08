@@ -14,7 +14,7 @@
     <string name="title_activity_baseball_main">Baseball</string>
     <string name="title_activity_matchup_main">Match-ups</string>
     <string name="matchup_prompt_string">Select a matchup</string>
-    <string name="new_player">Create New Player</string>
+    <string name="new_player">New Player</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_view_history">Game Records</string>
@@ -70,14 +70,15 @@
     <string name="history_section4">Baseball</string>
     <string name="title_activity_baseball_standingsactivity">BaseballStandingsactivity</string>
 
-    <!--General-->
+    <!-- General -->
     <string name="standings">Standings</string>
     <string name="enter_score">Enter Score</string>
 
-    <!--Baseball Text-->
+    <!-- Baseball Text -->
     <string name="inning">Inning</string>
 
-    <!--Golf Text-->
+    <!-- Golf Text -->
     <string name="hole">Hole</string>
+    <string name="title_activity_test">Test</string>
 
 </resources>

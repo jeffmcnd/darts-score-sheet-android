@@ -97,6 +97,10 @@ public class BaseballActivity extends Activity {
     public void onBackPressed() {
         // Warn that progress is lost, unless you want to implement saving.
         super.onBackPressed();
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     private void saveGame() {

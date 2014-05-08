@@ -19,23 +19,20 @@ import ca.mcnallydawes.dartsscoring.R;
 import ca.mcnallydawes.dartsscoring.datasources.CricketDataSource;
 
 public class CricketActivity extends PortraitActivity {
-	TextView[] textScores;
-	TextView currentPlayerName;
 	int currentPlayerNumber;
 	int[] currentScores;
-
 	int[][] playerScores;
 
-	private String[] playerScoresPerTurn;
+    boolean[] hasTouchedButton;
 
-	private String[] playerNames;
+    String startTime;
+	String[] playerScoresPerTurn;
+	String[] playerNames;
 
 	CricketDataSource dataSource;
 
-	String startTime;
-	int[] finishTime;
-
-	boolean[] hasTouchedButton;
+    TextView currentPlayerName;
+    TextView[] textScores;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -102,81 +99,41 @@ public class CricketActivity extends PortraitActivity {
 
 	@Override
 	public void onBackPressed() {
-		promptForSave();
 		dataSource.close();
-		overridePendingTransition(0, 0);
-		// super.onBackPressed();
-		// startActivity(new Intent(this, MatchupMainActivity.class));
-	}
 
-	public void promptForSave() {
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage(
-				"The game isn't over! Would you like to save your progress?")
-				.setTitle("Save Game");
-
-		builder.setPositiveButton("Yes", new OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				saveGame(false);
-			}
-		});
-
-		builder.setNegativeButton("No", new OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				CricketActivity.this.finish();
-			}
-		});
-
-		AlertDialog dialog = builder.create();
-		dialog.show();
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
 	}
 
 	public void enterScore(View v) {
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage(
-				"Are you sure " + playerNames[currentPlayerNumber]
-						+ " is finished the turn?").setTitle("Entering Score");
-
-		builder.setPositiveButton("Yes", new OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				setScoresForPlayer();
-			}
-		});
-
-		builder.setNegativeButton("No", new OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-
-			}
-		});
-
-		AlertDialog dialog = builder.create();
-		dialog.show();
+        setScoresForPlayer();
 	}
 
 	public void setScoresForPlayer() {
-		boolean haveWinner = checkWin();
+        int winnerNum = -1;
 
-		int nextPlayerNumber = currentPlayerNumber == 0 ? 1 : 0;
+        if(checkWin(0)) {
+            winnerNum = 0;
+        } else {
+            if(checkWin(1)) winnerNum = 1;
+        }
+
+
+		int nextPlayerNumber = (currentPlayerNumber + 1) %2;;
 
 		// In cases where the player's name ends with an "s"
-		if (playerNames[nextPlayerNumber].substring(
-				playerNames[nextPlayerNumber].length() - 1).equals("s")) {
+		if (playerNames[nextPlayerNumber].substring(playerNames[nextPlayerNumber].length() - 1).equals("s")) {
 			currentPlayerName.setText(playerNames[nextPlayerNumber] + "' Turn");
 		} else {
-			currentPlayerName
-					.setText(playerNames[nextPlayerNumber] + "'s Turn");
+			currentPlayerName.setText(playerNames[nextPlayerNumber] + "'s Turn");
 		}
 
 		for (int i = 0; i < 7; i++) {
 			if (playerScores[currentPlayerNumber][i] != currentScores[i]) {
 				Log.d(getClass().getName(), "i: " + i);
-				addToScorePerTurn(
-						Math.abs(playerScores[currentPlayerNumber][i]
-								- currentScores[i]), i);
+				addToScorePerTurn(Math.abs(playerScores[currentPlayerNumber][i]	- currentScores[i]), i);
 			}
 
 			playerScores[currentPlayerNumber][i] = currentScores[i];
@@ -184,10 +141,10 @@ public class CricketActivity extends PortraitActivity {
 			textScores[i].setText(String.valueOf(currentScores[i]));
 		}
 
-		if (haveWinner) {
+		if (winnerNum > -1 && currentPlayerNumber == 1) {
 			Log.d(getClass().getName(), playerNames[currentPlayerNumber]
 					+ " wins! Saving...");
-			saveGame(true);
+			saveGame(winnerNum);
 
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage("Saving game.").setTitle("We have a winner!");
@@ -197,7 +154,6 @@ public class CricketActivity extends PortraitActivity {
 			builder.setPositiveButton("Continue", new OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-//					CricketActivity.this.finish();
                     Intent intent = new Intent(act, MainMenuActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
@@ -207,6 +163,7 @@ public class CricketActivity extends PortraitActivity {
 			AlertDialog dialog = builder.create();
 			dialog.show();
 		}
+
 		currentPlayerNumber = nextPlayerNumber;
 
 		resetHasTouchedButton();
@@ -285,7 +242,6 @@ public class CricketActivity extends PortraitActivity {
 
 	public void subScoreAtIndex(int index) {
 		if (currentScores[index] > playerScores[currentPlayerNumber][index])
-		// if(currentScores[index] > 0)
 		{
 			currentScores[index]--;
 			textScores[index].setText(String.valueOf(currentScores[index]));
@@ -299,8 +255,8 @@ public class CricketActivity extends PortraitActivity {
 		}
 	}
 
-	public void saveGame(boolean haveWinner) {
-		int nextPlayerNumber = currentPlayerNumber == 0 ? 1 : 0;
+	public void saveGame(int winner) {
+		int nextPlayerNumber = (winner + 1) % 2;
 
 		Calendar c = Calendar.getInstance();
 		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
@@ -311,24 +267,10 @@ public class CricketActivity extends PortraitActivity {
 		rightNow.setToNow();
 		String finishTime = rightNow.format("%k:%M:%S");
 
-		Log.d(getClass().getName(), "Player 1: " + playerNames[0]
-				+ "\nPlayer2: " + playerNames[1] + "\nPlayer 1 SPT: "
-				+ playerScoresPerTurn[0] + "\nPlayer 2 SPT: "
-				+ playerScoresPerTurn[1] + "\nWinner: "
-				+ playerNames[currentPlayerNumber] + "\nLoser: "
-				+ playerNames[nextPlayerNumber] + "\nDate: " + date
-				+ "\nStart Time: " + startTime + "\nFinish Time: " + finishTime);
-
-		if (haveWinner) {
-			dataSource.createCricketGame(playerNames[0], playerNames[1],
-					playerScoresPerTurn[0], playerScoresPerTurn[1],
-					playerNames[currentPlayerNumber],
-					playerNames[nextPlayerNumber], date, startTime, finishTime);
-		} else {
-			dataSource.createCricketGame(playerNames[0], playerNames[1],
-					playerScoresPerTurn[0], playerScoresPerTurn[1], "", "",
-					date, startTime, finishTime);
-		}
+        dataSource.createCricketGame(playerNames[0], playerNames[1],
+                playerScoresPerTurn[0], playerScoresPerTurn[1],
+                playerNames[winner],
+                playerNames[nextPlayerNumber], date, startTime, finishTime);
 	}
 
 	public void addToScorePerTurn(int times, int index) {
@@ -362,12 +304,12 @@ public class CricketActivity extends PortraitActivity {
 		}
 	}
 
-	public boolean checkWin() {
-		for (int i = 0; i < 7; i++) {
-			if (currentScores[i] != 3) {
-				return false;
-			}
-		}
+	public boolean checkWin(int playerNum) {
+        for (int i = 0; i < 7; i++) {
+            if (playerScores[playerNum][i] != 3) {
+                return false;
+            }
+        }
 		return true;
 	}
 

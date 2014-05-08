@@ -4,6 +4,19 @@ android {
     compileSdkVersion 19
     buildToolsVersion "19.0.3"
 
+//    siginingConfigs {
+//        debug {
+//            storeFile file("debug.keystore")
+//        }
+//
+//        myConfig {
+//            storeFile file("other.keystore")
+//            storePassword "android"
+//            keyAliass "androiddebugkey"
+//            keyPassword "android"
+//        }
+//    }
+
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 19
@@ -14,6 +27,12 @@ android {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+
+//        foo {
+//            debuggable true
+//            jniDebugBuild true
+//            signingConfig singingConfigs.myConfig
+//        }
     }
 }
 

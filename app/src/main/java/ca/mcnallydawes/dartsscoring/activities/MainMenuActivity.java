@@ -16,6 +16,7 @@ public class MainMenuActivity extends Activity {
 
 	public void onClick(View v) {
 		Intent intent = new Intent(this, MatchupMainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
 
 		switch (v.getId()) {
 		case R.id.cricket_select_btn:

@@ -3,5 +3,6 @@
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cork_green"
     tools:context="ca.mcnallydawes.dartsscoring.activities.TabbedHistoryActivity" />
 <!-- From: file:/Users/jeffrey/workspace/jeffrey/android/darts-score-sheet-android/app/src/main/res/layout/activity_tabbed_history.xml -->
